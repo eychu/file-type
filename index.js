@@ -1,5 +1,5 @@
 'use strict';
-module.exports = function (buf) {
+var fileType = function (buf) {
 	if (!(buf && buf.length > 1)) {
 		return null;
 	}
@@ -221,13 +221,6 @@ module.exports = function (buf) {
 		return {
 			ext: 'wav',
 			mime: 'audio/x-wav'
-		};
-	}
-
-	if (buf[0] === 0x23 && buf[1] === 0x21 && buf[2] === 0x41 && buf[3] === 0x4D && buf[4] === 0x52 && buf[5] === 0x0A) {
-		return {
-			ext: 'amr',
-			mime: 'audio/amr'
 		};
 	}
 
