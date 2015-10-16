@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "description": "Detect the file type of a Buffer/Uint8Array",
   "license": "MIT",
-  "repository": "sindresorhus/file-type",
+  "repository": "eychu/file-type",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
